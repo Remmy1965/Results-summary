@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
 
@@ -26,7 +26,8 @@
         text-align: center;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: hsla(228, 45%, 44%, 0.965);
+        color: hsla(256, 45%, 49%, 0.981);
       }
     </style>
   </head>
@@ -34,58 +35,97 @@
     <main
       class="bg-paleBlue mx-auto flex items-center justify-center min-h-screen">
       <!--General Flex container -->
-      <div class="flex items-center justify-between bg-white">
+      <div
+        class="flex items-stretch max-w-[650px] 2xl:max-w-[800px] rounded-3xl bg-white shadow-lg">
         <!-- Results flex container -->
         <div
-          class="flex flex-col items-center py-4 px-16 space-y-6 p-4 bg-gradient-to-b from-lightSlateBlue to-violetBlue rounded-2xl">
-          <h1 class="font-hanken text-sm text-white text-center">
+          class="flex flex-[1] flex-col items-center py-4 px-4 space-y-6 bg-gradient-to-b from-lightSlateBlue to-violetBlue rounded-b-3xl rounded-3xl">
+          <h1
+            class="font-hanken font-light tracking-wider text-sm text-lightLavender text-center">
             Your Result
           </h1>
           <div
-            class="flex flex-col items-center h-11 w-11 p-16 justify-center space-y-2 bg-lightRoyalBlue rounded-full">
+            class="flex flex-col items-center py-10 px-12 justify-center space-y-2 bg-gradient-to-b from-violetBlue to-violetBlueG rounded-full">
             <h1
-              class="max-w-md mx-auto text-4xl text-center text-white font-hanken font-bold">
+              class="max-w-md mx-auto text-5xl text-center text-white font-hanken font-bold">
               76
             </h1>
 
-            <p class="max-w-sm text-lightLavender">of 100</p>
+            <p class="w-full text-sm text-center text-lightLavender">of 100</p>
           </div>
           <h5 class="text-lg text-center font-bold text-white">Great</h5>
-          <p class="max-w-xs text-sm text-lightLavender text-center">
+          <p class="text-[15px] px-4 max-w-xs text-lightLavender text-center">
             You scored higher than 65% of the people who have taken these tests.
           </p>
         </div>
+
+        <!-- Summary Container -->
+        <div
+          class="flex flex-col items-center justify-between rounded-r-3xl flex-[1] px-6 py-4">
+          <h2 class="text-lg self-start my-4 font-bold text-black">Summary</h2>
+          <!-- Items Container -->
+          <div class="flex flex-col w-full gap-3 mb-4">
+            <!-- Items 1 -->
+            <div
+              class="flex items-center justify-between bg-lightRedG px-2 py-3 rounded-lg">
+              <div class="flex items-center justify-between space-x-2">
+                <img src="./assets/images/icon-reaction.svg" alt="" class="" />
+                <p class="text-sm text-lightRed font-bold">Reaction</p>
+              </div>
+              <p class="text-sm text-gray-50">
+                <span class="text-black font-bold">80 </span
+                ><span class="text-gray-500">/ 100</span>
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between bg-orangeYellowG px-2 py-3 rounded-lg">
+              <div class="flex items-center justify-between space-x-2">
+                <img src="./assets/images/icon-memory.svg" alt="" class="" />
+                <p class="text-sm text-orangeyYellow font-bold">Memory</p>
+              </div>
+              <p class="text-sm">
+                <span class="text-black font-bold">92 </span
+                ><span class="text-gray-500">/ 100</span>
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between bg-greenTealG px-2 py-3 rounded-lg">
+              <div class="flex items-center justify-between space-x-2">
+                <img src="./assets/images/icon-verbal.svg" alt="" class="" />
+                <p class="text-sm text-greenTeal font-bold">Verbal</p>
+              </div>
+              <p class="text-sm text-gray-50">
+                <span class="text-black font-bold">61 </span
+                ><span class="text-gray-500">/ 100</span>
+              </p>
+            </div>
+            <div
+              class="flex items-center justify-between bg-cobaltBlueG px-2 py-3 rounded-lg">
+              <div class="flex items-center justify-between space-x-2">
+                <img src="./assets/images/icon-visual.svg" alt="" class="" />
+                <p class="text-sm text-cobaltBlue font-bold">Visual</p>
+              </div>
+              <p class="text-sm text-gray-50">
+                <span class="text-black font-bold">72 </span
+                ><span class="text-gray-500">/ 100</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Button -->
+          <a
+            href="#"
+            class="py-3 w-full bg-darkGrayBlue text-sm text-white font-bold rounded-full shadow-sm text-center mb-4"
+            >Continue</a
+          >
+        </div>
       </div>
     </main>
-
-    <!-- Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
-
-  Reaction
-  80 / 100
-
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue -->
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="https://github.com/Remmy1965">Hakeem Quadri</a>.
     </div>
   </body>
 </html>
